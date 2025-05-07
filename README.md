@@ -1,17 +1,9 @@
-# **ezsql**
+# **ezsql-fixed**
 
-[![Windows](https://github.com/ezSQL/ezsql/workflows/Windows/badge.svg)](https://github.com/ezSQL/ezsql/actions?query=workflow%3AWindows)
-[![Linux](https://github.com/ezSQL/ezsql/workflows/Linux/badge.svg)](https://github.com/ezSQL/ezsql/actions?query=workflow%3ALinux)
-[![macOS](https://github.com/ezSQL/ezsql/workflows/macOS/badge.svg)](https://github.com/ezSQL/ezsql/actions?query=workflow%3AmacOS)
-[![codecov](https://codecov.io/gh/ezSQL/ezSQL/branch/master/graph/badge.svg)](https://codecov.io/gh/ezSQL/ezSQL)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/aad1f6aaaaa14f60933e75615da900b8)](https://www.codacy.com/app/techno-express/ezsql?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ezSQL/ezsql&amp;utm_campaign=Badge_Grade)
-[![Maintainability](https://api.codeclimate.com/v1/badges/6f6107f25e9de7bf4272/maintainability)](https://codeclimate.com/github/ezSQL/ezsql/maintainability)
-[![Total Downloads](https://poser.pugx.org/ezsql/ezsql/downloads)](https://packagist.org/packages/ezsql/ezsql)
+[![Total Downloads](https://poser.pugx.org/kazimolmez/ezsql-fixed/downloads)](https://packagist.org/packages/kazimolmez/ezsql-fixed)
 
 ***A class to make it very easy to deal with database connections.***
 *An universal interchangeable **CRUD** system.*
-
-This is [__Version 5__](https://github.com/ezSQL/ezsql/tree/v5) which will break users of **version 4**.
 
 Mainly by:
 
@@ -39,19 +31,15 @@ Mainly by:
 - renamed createCertificate to create_certificate
 - added global get_results to return result sets in different formats
 
-[__Version 4__](https://github.com/ezSQL/ezsql/tree/v4) has many modern programming practices in which will break users of version 3.
-
-[__Version 3__](https://github.com/ezSQL/ezsql/tree/v3) broke version 2.1.7 in one major way, it required *PHP 5.6*. Which drop mysql extension support, other than that, nothing as far using the library was changed, only additional features.
-
 This library has an `Database` class, an combination of the [Factory](https://en.wikipedia.org/wiki/Factory_method_pattern) pattern with an [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) container hosting. This library now is following many OOP principles, one in which, the methods properties public access has been removed. This library also following PSR-2, PSR-4, PSR-11 conventions, and mostly PSR-1, that's still an work in progress.
 
 * More Todo...
 
-For an full overview see [documentation Wiki](https://github.com/ezSQL/ezsql/wiki/Documentation), which is not completely finish.
+For an full overview see [documentation Wiki](https://github.com/kazimolmez/ezsql-fixed/wiki/Documentation), which is not completely finish.
 
 ## Installation
 
-    composer require ezsql/ezsql
+    composer require kazimolmez/ezsql-fixed
 
 ## Usage
 
@@ -347,14 +335,10 @@ use function ezsql\functions\{
 };
 ```
 
-For the functions **usage/docs** see [ezFunctions.php](https://github.com/ezSQL/ezsql/blob/v5/lib/ezFunctions.php).
+For the functions **usage/docs** see [ezFunctions.php](https://github.com/kazimolmez/ezsql-fixed/blob/v5/lib/ezFunctions.php).
 
 ## For Authors and **[Contributors](https://github.com/ezSQL/ezsql/blob/master/CONTRIBUTORS.md)**
 
-## Contributing
-
-Contributions are encouraged and welcome; I am always happy to get feedback or pull requests on Github :) Create [Github Issues](https://github.com/ezSQL/ezsql/issues) for bugs and new features and comment on the ones you are interested in.
-
 ## License
 
-**ezsql** is open-sourced software licensed originally under (LGPL-3.0), and the addon parts under (MIT).
+**ezsql-fixed** is open-sourced software licensed originally under (LGPL-3.0), and the addon parts under (MIT).

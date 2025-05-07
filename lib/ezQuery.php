@@ -686,7 +686,7 @@ class ezQuery implements ezQueryInterface
         if ($execute) {
             foreach ($keyValue as $key => $val) {
                 $index .= "$key, ";
-                if (\strtolower($val) == 'null')
+                if (is_null($val) || \strtolower($val) == 'null')
                     $value .= "NULL, ";
                 elseif (\in_array(\strtolower($val), array('current_timestamp()', 'date()', 'now()')))
                     $value .= "CURRENT_TIMESTAMP(), ";
